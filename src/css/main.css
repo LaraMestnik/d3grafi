@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  text-transform: uppercase;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background: #040F16;
+  color: #F6F0ED;
+}
+
+/*# sourceMappingURL=main.css.map */

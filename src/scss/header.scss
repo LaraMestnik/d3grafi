@@ -1,0 +1,7 @@
+@import 'utilities';
+
+header{
+    @include flexCenter;
+    height: 20vh;
+    text-transform: uppercase;
+}

@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
+import Header from "./components/Header";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const [data, setData] = useState([]);
+
+  async function handleFetchData() {
+    const response = await fetch('https://bsi.si/_data/tecajnice/dtecbs-l.xml');
+    const text = await response.text();
+    const parser = new DOMParser();
+    const xmlDoc = parser.parseFromString(text, 'text/xml');
+  }
+
+
+  return (<>
+    <Header />
+    <div>
+      <button onClick={handleFetchData}>get data</button>
     </div>
+  </>
   );
 }
 
