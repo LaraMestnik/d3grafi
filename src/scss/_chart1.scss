@@ -1,0 +1,9 @@
+@import 'utilities';
+
+#chart1{
+    @include flexCenter;
+}
+
+#barGroup{
+    display: flex;
+}

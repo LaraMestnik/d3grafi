@@ -7,6 +7,22 @@ header {
   text-transform: uppercase;
 }
 
+#chart1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#barGroup {
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   min-height: 100vh;
   font-family: "Open Sans", sans-serif;
